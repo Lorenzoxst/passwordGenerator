@@ -13,6 +13,7 @@ var includeLowerCase;
 var includeUpperCase;
 var includeNums;
 var includeSpecial;
+var randChar;
 upperCase = Array.from(upperCase);
 lowCase = Array.from(lowCase);
 specialChars = Array.from(specialChars);
@@ -27,8 +28,8 @@ function writePassword() {
 
   alert("Lets create a secure password!");
     
-  passwordLength = prompt(`What would you like the length of password to be.\n
-  (please enter a number between 8 and 128)`);
+  passwordLength = parseInt(prompt(`What would you like the length of password to be.\n
+  (please enter a number between 8 and 128)`));
 
     if (passwordLength < 8 || passwordLength > 128) {
       alert("You must pick a number between 8 and 128. Please enter a new number");
@@ -65,7 +66,7 @@ function writePassword() {
       includeNums = prompt(`Would you like any numbers to be possibly included?\n
     (please enter yes or no)`);
     } else if (includeNums === "yes") {
-      passwordArray = passwordArray.concat(includeNums);
+      passwordArray = passwordArray.concat(numbers);
     }
     
     includeSpecial = prompt(`Would you like any special characters to be possibly included?\n
@@ -75,7 +76,7 @@ function writePassword() {
       includeSpecial = prompt(`Would you like any special characters to be possibly included?\n
     (please enter yes or no)`);
     } else if (includeSpecial === "yes") {
-      passwordArray = passwordArray.concat(includeNums);
+      passwordArray = passwordArray.concat(specialChars);
     }
 
 
@@ -84,12 +85,12 @@ function writePassword() {
 
 
   function generatePassword() {
-    for (i=0; i > passwordLength; i++) {
-      
+    for (var i=0; i < passwordLength; i++) {
+      randChar = passwordArray[Math.floor(Math.random() * passwordArray.length)];
     }
-  }
-};
-
+}
+  console.log(randChar)
+}
 
 // var passwordLength = prompt(passwordPrompt) 
 
@@ -190,6 +191,4 @@ THEN the password is either displayed in an alert or written to the page
 // }
 
 // possible idea, hide password initially, button reveals or hides.
-
-
 
