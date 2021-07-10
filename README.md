@@ -1,2 +1,2 @@
 # passwordGenetator
-A web based pasword generator using Javascript, HTML and CSS. 
+A web based password generator using Javascript, HTML and CSS. 
