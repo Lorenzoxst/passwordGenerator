@@ -22,6 +22,7 @@ To install use GitHub's guidelines to clone the repsitory.
 * Users have the ability to input the amount of characters they would like to use for their password.
 [![Image from Gyazo](https://i.gyazo.com/6e9cbb4b16ab070472fd6d81f613680d.png)](https://gyazo.com/6e9cbb4b16ab070472fd6d81f613680d)
 * Extensive validation to ensure user enters the correct values for the program to run. 
+
 [![Image from Gyazo](https://i.gyazo.com/3bebdfc2038d2c919e214e7d8fc25e43.png)](https://gyazo.com/3bebdfc2038d2c919e214e7d8fc25e43)
 * Easy to follow instructions and explanations. 
 [![Image from Gyazo](https://i.gyazo.com/3b6bcb2664632a5e14dd2cd44e55e225.png)](https://gyazo.com/3b6bcb2664632a5e14dd2cd44e55e225)
